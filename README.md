@@ -28,7 +28,7 @@ cli.extension('.js');
 cli.main('sample');
 ```
 
-Create a file `mycommand-sample` in `./lib/commands`
+Create a file `sample.js` in `./lib/commands`
 ```
 
 Command = require('../../lib/main').Command;
