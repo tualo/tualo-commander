@@ -4,17 +4,15 @@ program = require 'commander'
 module.exports =
 class Cli
   constructor: () ->
-    @cmdPath = path.join('..','..','..','lib','commands')
+    @cmdPath = path.resolve('.','lib','commands')
     @pck =
       version: 'none'
     try
-      @pck = require(path.join('..','..','..','package.json'))
+      @pck = require(path.join('.','package.json'))
     catch
       @pck =
         version: 'none'
-      
-
-    @cmdFileExtension = 'js'
+    @cmdFileExtension = '.js'
 
   #set the pathname where to find the commands
   commands: (pathName) ->
