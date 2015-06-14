@@ -4,11 +4,11 @@ program = require 'commander'
 module.exports =
 class Cli
   constructor: () ->
-    @cmdPath = path.resolve('.','lib','commands')
+    @cmdPath = path.resolve(process.mainModule.filename,'..','..','lib','commands')
     @pck =
       version: 'none'
     try
-      @pck = require(path.join('.','package.json'))
+      @pck = require(path.join(process.mainModule.filename,'..','..','package.json'))
     catch
       @pck =
         version: 'none'
