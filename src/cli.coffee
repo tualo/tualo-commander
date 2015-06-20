@@ -44,6 +44,7 @@ class Cli
         if opts.length==0
           c = new cmd()
           c.action(program)
+
         else
           program.arguments(opts.join(' ')).action  (a0,a1,a2,a3,a4,a5) ->
             arg = {}
