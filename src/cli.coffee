@@ -43,6 +43,7 @@ class Cli
         (opts.push('<'+op+'>') for op in cmd.commandArgs)
         if opts.length==0
           c = new cmd()
+          program.parse process.argv
           c.action(program)
 
         else
@@ -68,11 +69,11 @@ class Cli
           program.on '--help', () ->
             console.log cmd.help()
             console.log ""
+          program.parse process.argv
     else
       for command in commands
         opts = []
         (opts.push('<'+op+'>') for op in command.commandArgs)
         cmdL = [command.commandName].concat( opts )
         program.command(cmdL.join(' '),command.commandShortDescription)
-
-    program.parse process.argv
+      program.parse process.argv
