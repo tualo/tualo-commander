@@ -3,7 +3,7 @@
   "description": "gerneric git style command line tool",
   "homepage": "https://github.com/tualo/tualo-commander",
   "main": "lib/main.js",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "engines": {
     "node": ">=0.12.0"
   },
@@ -33,12 +33,6 @@
     "commander": "*"
   },
   "devDependencies": {
-    "grunt": "*",
-    "grunt-contrib-coffee": "*",
-    "grunt-cli": "*",
-    "grunt-shell": "*",
-    "grunt-coffeelint": "*",
-    "coffee-script": "^1.9.0"
+    "grunt": "^1.0.1"
   }
-
 }
