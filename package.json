@@ -3,7 +3,7 @@
   "description": "gerneric git style command line tool",
   "homepage": "https://github.com/tualo/tualo-commander",
   "main": "lib/main.js",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "engines": {
     "node": ">=0.12.0"
   },

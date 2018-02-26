@@ -47,7 +47,7 @@ class Cli
           c.action(program)
 
         else
-          program.arguments(opts.join(' ')).action  (a0,a1,a2,a3,a4,a5,a6,a7,a8,a9) ->
+          program.arguments(opts.join(' ')).action  (a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15) ->
             arg = {}
             index = 0
             for name in cmd.commandArgs
@@ -71,6 +71,18 @@ class Cli
                 arg[name]= a8
               if index == 9
                 arg[name]= a9
+              if index == 10
+                arg[name]= a10
+              if index == 11
+                arg[name]= a11
+              if index == 12
+                arg[name]= a12
+              if index == 13
+                arg[name]= a13
+              if index == 14
+                arg[name]= a14
+              if index == 15
+                arg[name]= a15
               index++
             c = new cmd()
             c.action program,arg
