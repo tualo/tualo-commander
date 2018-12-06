@@ -26,9 +26,9 @@ module.exports = (grunt) ->
 
 
   grunt.loadNpmTasks 'grunt-contrib-coffee'
-  grunt.loadNpmTasks 'grunt-coffeelint'
+#  grunt.loadNpmTasks 'grunt-coffeelint'
 
-  grunt.registerTask('lint', ['coffeelint'])
-  grunt.registerTask 'default', ['coffee','lint']
+#  grunt.registerTask('lint', ['coffeelint'])
+  grunt.registerTask 'default', ['coffee'] #,'lint']
   grunt.registerTask 'clean', ->
     grunt.file.delete('lib') if grunt.file.exists('lib')
